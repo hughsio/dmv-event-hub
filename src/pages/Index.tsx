@@ -26,7 +26,7 @@ const Index = () => {
               Discover<span className="text-dmv-pink"> DMV's</span> Best Events
             </h1>
             <p className="text-lg md:text-xl mb-8 max-w-2xl">
-              Explore the hottest events happening in DC, Maryland, and Virginia. 
+              Explore the hottest events happening in DMV! 
               Find concerts, festivals, workshops, and more!
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
