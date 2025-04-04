@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// DMV Event Hub custom colors
+				dmv: {
+					blue: '#1A365D',
+					pink: '#FFB7C5',
+					gold: '#FFC72C',
+					gray: '#F5F7FA',
+					dark: '#2D3748'
 				}
 			},
 			borderRadius: {
