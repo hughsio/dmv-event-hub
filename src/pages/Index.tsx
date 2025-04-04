@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -36,7 +35,7 @@ const Index = () => {
                 </Button>
               </Link>
               <Link to="/profile">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+                <Button size="lg" variant="outline" className="border-white text-dmv-blue hover:bg-white/10">
                   My Events
                 </Button>
               </Link>
@@ -81,7 +80,7 @@ const Index = () => {
         </div>
       </section>
       
-      {/* CTA Section */}
+      {/* Call To Action Section */}
       <section className="py-16 px-4 bg-dmv-pink/10">
         <div className="container mx-auto text-center max-w-3xl">
           <h2 className="text-3xl font-bold text-dmv-blue mb-6">Never Miss an Event Again</h2>

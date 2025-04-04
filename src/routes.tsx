@@ -1,0 +1,42 @@
+import { Routes, Route } from 'react-router-dom';
+import { SignedIn, SignedOut, RedirectToSignIn } from '@clerk/clerk-react';
+import Index from './pages/Index';
+import ExploreEvents from './pages/ExploreEvents';
+import EventDetails from './pages/EventDetails';
+import Profile from './pages/Profile';
+import NotFound from './pages/NotFound';
+import SignIn from './components/SignIn';
+import SignUp from './components/SignUp';
+
+const AppRoutes = () => {
+  return (
+    <Routes>
+      {/* Public routes */}
+      <Route path="/" element={<Index />} />
+      <Route path="/explore" element={<ExploreEvents />} />
+      <Route path="/event/:eventId" element={<EventDetails />} />
+      <Route path="/sign-in" element={<SignIn />} />
+      <Route path="/sign-up" element={<SignUp />} />
+
+      {/* Protected routes */}
+      <Route
+        path="/profile"
+        element={
+          <>
+            <SignedIn>
+              <Profile />
+            </SignedIn>
+            <SignedOut>
+              <RedirectToSignIn />
+            </SignedOut>
+          </>
+        }
+      />
+
+      {/* 404 route */}
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+  );
+};
+
+export default AppRoutes; 

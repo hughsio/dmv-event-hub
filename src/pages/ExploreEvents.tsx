@@ -32,7 +32,7 @@ const ExploreEvents = () => {
     if (selectedCategory) {
       result = result.filter(event => event.category === selectedCategory);
     }
-    
+  // Search for events
     if (searchTerm) {
       const lowerSearchTerm = searchTerm.toLowerCase();
       result = result.filter(event => 
@@ -41,7 +41,7 @@ const ExploreEvents = () => {
         event.location.toLowerCase().includes(lowerSearchTerm)
       );
     }
-    
+  // Set filtered events
     setFilteredEvents(result);
   }, [searchTerm, selectedCategory]);
 
