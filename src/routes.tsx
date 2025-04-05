@@ -7,6 +7,8 @@ import Profile from './pages/Profile';
 import NotFound from './pages/NotFound';
 import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import { Link } from 'react-router-dom';
 
 const AppRoutes = () => {
   return (
@@ -17,6 +19,7 @@ const AppRoutes = () => {
       <Route path="/event/:eventId" element={<EventDetails />} />
       <Route path="/sign-in" element={<SignIn />} />
       <Route path="/sign-up" element={<SignUp />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
       {/* Protected routes */}
       <Route
