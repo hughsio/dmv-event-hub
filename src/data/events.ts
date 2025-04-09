@@ -143,5 +143,19 @@ export const events: Event[] = [
     price: "Free",
     isFeatured: false,
     attendees: 189
+  },
+  {
+    id: uuidv4(),
+    title: "Test Event",
+    description: "Immerse yourself in diverse cultural traditions through performances, crafts, cooking demonstrations, and storytelling.",
+    date: "2025-06-26",
+    time: "11:00 AM - 9:00 PM",
+    location: "National Mall, Washington DC",
+    category: "Arts",
+    image: "https://images.unsplash.com/photo-1562164038-91cfe1d7cbce",
+    organizer: "Smithsonian Institution",
+    price: "Free",
+    isFeatured: false,
+    attendees: 189
   }
 ];
