@@ -21,7 +21,7 @@
 ## 👥 Team Members
 | Name | Role | GitHub |
 |------|------|--------|
-| Alice Doe | Frontend Lead | [@alicedoe](https://github.com/alicedoe) |
+| Hugh S. | Senior Programmer | [@hughsio](https://github.com/hughsio) |
 | Bob Smith | Backend Developer | [@bobsmith](https://github.com/bobsmith) |
 | Charlie Lee | Data Analyst | [@charlielee](https://github.com/charlielee) |
 
