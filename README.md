@@ -27,12 +27,16 @@ Designer: Asia Omary
 Senior Programmer: Hugh Smith
 
 3. [Features]
+
 -Exclusively for the DC community
 -A plethera of features to filter through events age, event type, and times.
+
 4. [Tech Stack]
+
 - Languages: Python, JavaScript, HTML, CSS
 - Framework/Libraries: Flask, React, Pandas
 - Tools: Git, Docker, Postman
+
 5. [Installation]()
 6. [Usage]()
 7. [Project Structure]()
