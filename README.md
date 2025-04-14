@@ -21,6 +21,7 @@ Senior Programmer:  Dagmawi Mulualem  
 Designer: Asia Omary 
 
 Senior Programmer: Hugh Smith)
+
 3. [Features]()
 4. [Tech Stack]()
 5. [Installation]()
