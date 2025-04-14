@@ -3,6 +3,7 @@
 1. [Project Overview]
 
 DC Life is a mobile application designed to help users discover and enjoy events in the Washington Metropolitan area. The app updates event schedules, locations, and other key details. Users can easily filter events by age group and event type, such as music, theater, festivals, family-friendliness, and other criteria, to find events that match their interests.
+
 2. [Team Members]
 
 Product Owner: Nicholas Kenner 
