@@ -40,13 +40,23 @@ Senior Programmer: Hugh Smith
 
 - Tools: Git, Docker, Postman
 
-5. [Installation]()
+5. [Installation]
+
+# Clone the repo
+git clone https://github.com/your-org/project-name.git
+
+# Navigate into the directory
+cd project-Metro Buzz
+
+# Install dependencies (example for Python)
+pip install -r requirements.txt 
+
 6. [Usage]()
-7. [Project Structure]()
-8. [Contributing]()
-9. [Issues]()
-10. [License]()
-11. [Acknowledgments]()
+8. [Project Structure]()
+9. [Contributing]()
+10. [Issues]()
+11. [License]()
+12. [Acknowledgments]()
 
 ---
 ## 📖 Project Overview
