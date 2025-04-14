@@ -1,7 +1,25 @@
 # 📘 Project Title
 ## 📝 Table of Contents
-1. [Project Overview]()
-2. [Team Members]()
+1. [Project Overview](DC Life is a mobile application designed to help users discover and enjoy events in the Washington Metropolitan area. The app updates event schedules, locations, and other key details. Users can easily filter events by age group and event type, such as music, theater, festivals, family-friendliness, and other criteria, to find events that match their interests.)
+2. [Team Members](Product Owner: Nicholas Kenner 
+
+Scrum Master: Gabriela Jimenez Martinez 
+
+Lead Designer: Vannesa Valentine 
+
+Lead Programmer: Javon Peterson 
+
+Tester: Luis Calderon 
+
+Tester: Biniam Lemma 
+
+Programmer: Heaven Frazier 
+
+Senior Programmer:  Dagmawi Mulualem   
+
+Designer: Asia Omary 
+
+Senior Programmer: Hugh Smith)
 3. [Features]()
 4. [Tech Stack]()
 5. [Installation]()
