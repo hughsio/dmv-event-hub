@@ -34,7 +34,9 @@ Senior Programmer: Hugh Smith
 4. [Tech Stack]
 
 - Languages: Python, JavaScript, HTML, CSS
+
 - Framework/Libraries: Flask, React, Pandas
+
 - Tools: Git, Docker, Postman
 
 5. [Installation]()
