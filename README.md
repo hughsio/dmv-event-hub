@@ -24,7 +24,10 @@ Designer: Asia Omary
 Senior Programmer: Hugh Smith
 
 3. [Features]()
-4. [Tech Stack]()
+4. [Tech Stack]
+- Languages: Python, JavaScript, HTML, CSS
+- Framework/Libraries: Flask, React, Pandas
+- Tools: Git, Docker, Postman
 5. [Installation]()
 6. [Usage]()
 7. [Project Structure]()
