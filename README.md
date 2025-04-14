@@ -29,6 +29,7 @@ Senior Programmer: Hugh Smith
 3. [Features]
 
 -Exclusively for the DC community
+
 -A plethera of features to filter through events age, event type, and times.
 
 4. [Tech Stack]
