@@ -54,9 +54,10 @@ pip install -r requirements.txt
 6. [Usage]()
 8. [Project Structure]()
 9. [Contributing]()
-10. [Issues]()
+10. [Issues]
+
+TBA
 11. [License]()
-12. [Acknowledgments]()
 
 ---
 ## 📖 Project Overview
