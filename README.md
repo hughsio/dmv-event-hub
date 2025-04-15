@@ -55,7 +55,19 @@ pip install -r requirements.txt
 - NPM Start
 - Along with NPM Start it with open from the local host with a URL
 
-8. [Project Structure]()
+8. [Project Structure]
+
+```plaintext
+project-name/
+│
+├── data/               # Raw data files
+├── notebooks/          # Jupyter notebooks
+├── src/                # Source code
+├── tests/              # Unit tests
+├── README.md           # Project documentation
+└── requirements.txt    # Python dependencies 
+```
+
 9. [Contributing]()
 10. [Issues]
 
