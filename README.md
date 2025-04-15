@@ -51,12 +51,16 @@ cd project-Metro Buzz
 # Install dependencies (example for Python)
 pip install -r requirements.txt 
 
-6. [Usage]()
+6. [Usage]
+- NPM Start
+- Along with NPM Start it with open from the local host with a URL
+
 8. [Project Structure]()
 9. [Contributing]()
 10. [Issues]
 
 TBA
+
 11. [License]()
 
 ---
