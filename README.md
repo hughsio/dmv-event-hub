@@ -43,12 +43,15 @@ Senior Programmer: Hugh Smith
 5. [Installation]
 
 #Clone the repo
+
 git clone https://github.com/your-org/project-name.git
 
 #Navigate into the directory
+
 cd project-Metro Buzz
 
 #Install dependencies (example for Python)
+
 pip install -r requirements.txt 
 
 6. [Usage]
