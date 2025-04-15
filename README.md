@@ -71,7 +71,14 @@ project-name/
 └── requirements.txt    # Python dependencies 
 ```
 
-9. [Contributing]()
+9. [Contributing]
+
+Contribution guidelines
+
+Branch naming convention
+
+How to submit a pull request
+
 10. [Issues]
 
 Link to GitHub Issues tab
