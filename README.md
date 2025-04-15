@@ -74,9 +74,13 @@ project-name/
 9. [Contributing]()
 10. [Issues]
 
-TBA
+Link to GitHub Issues tab
 
-11. [License]()
+How users can report bugs or request features
+
+11. [License]
+
+TBA
 
 ---
 ## 📖 Project Overview
