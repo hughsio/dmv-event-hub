@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -9,11 +8,14 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { events } from '@/data/events';
 import { cn } from '@/lib/utils';
+import { Skeleton } from '@/components/ui/skeleton';
 
 const EventDetails = () => {
   const { eventId } = useParams<{ eventId: string }>();
   const navigate = useNavigate();
-  const { likeEvent, saveEvent, removeSavedEvent, isEventLiked, isEventSaved } = useUser();
+  const { likeEvent, saveEvent, removeSavedEvent, isEventLiked, isEventSaved, isLoading, savedEvents, likedEvents } = useUser();
+  const [likePending, setLikePending] = useState(false);
+  const [savePending, setSavePending] = useState(false);
   
   const event = events.find(e => e.id === eventId);
   
@@ -33,6 +35,9 @@ const EventDetails = () => {
     );
   }
   
+  console.log(`[EventDetails] Rendering - Event ID: ${event.id}, IsLoading: ${isLoading}, IsLiked: ${isEventLiked(event.id)}, IsSaved: ${isEventSaved(event.id)}`);
+  console.log(`[EventDetails] Context State - Saved: [${savedEvents.join(', ')}], Liked: [${likedEvents.join(', ')}]`);
+  
   const liked = isEventLiked(event.id);
   const saved = isEventSaved(event.id);
   
@@ -51,6 +56,38 @@ const EventDetails = () => {
     } else {
       navigator.clipboard.writeText(window.location.href);
       alert('Link copied to clipboard!');
+    }
+  };
+
+  const handleLike = async () => {
+    console.log(`[EventDetails] handleLike called for event: ${event.id}`);
+    if (likePending) return;
+    setLikePending(true);
+    try {
+      console.log(`[EventDetails] Calling likeEvent from context...`);
+      await likeEvent(event.id);
+      console.log(`[EventDetails] likeEvent call finished.`);
+    } finally {
+      setLikePending(false);
+    }
+  };
+
+  const handleSaveToggle = async () => {
+    console.log(`[EventDetails] handleSaveToggle called for event: ${event.id}, current saved state: ${saved}`);
+    if (savePending) return;
+    setSavePending(true);
+    try {
+      if (saved) {
+        console.log(`[EventDetails] Calling removeSavedEvent from context...`);
+        await removeSavedEvent(event.id);
+        console.log(`[EventDetails] removeSavedEvent call finished.`);
+      } else {
+        console.log(`[EventDetails] Calling saveEvent from context...`);
+        await saveEvent(event.id);
+        console.log(`[EventDetails] saveEvent call finished.`);
+      }
+    } finally {
+      setSavePending(false);
     }
   };
 
@@ -134,40 +171,50 @@ const EventDetails = () => {
                     Register Now
                   </Button>
                   
-                  <div className="flex space-x-2">
-                    <Button 
-                      variant="outline" 
-                      className={cn(
-                        "flex-1 flex items-center justify-center",
-                        liked ? "text-rose-500 border-rose-500" : ""
-                      )}
-                      onClick={() => likeEvent(event.id)}
-                    >
-                      <Heart className="h-4 w-4 mr-2" fill={liked ? "currentColor" : "none"} />
-                      {liked ? "Liked" : "Like"}
-                    </Button>
-                    
-                    <Button 
-                      variant="outline"
-                      className={cn(
-                        "flex-1 flex items-center justify-center",
-                        saved ? "text-dmv-blue border-dmv-blue" : ""
-                      )}
-                      onClick={() => saved ? removeSavedEvent(event.id) : saveEvent(event.id)}
-                    >
-                      <Bookmark className="h-4 w-4 mr-2" fill={saved ? "currentColor" : "none"} />
-                      {saved ? "Saved" : "Save"}
-                    </Button>
-                    
-                    <Button 
-                      variant="outline"
-                      className="flex-1 flex items-center justify-center"
-                      onClick={handleShare}
-                    >
-                      <Share2 className="h-4 w-4 mr-2" />
-                      Share
-                    </Button>
-                  </div>
+                  {isLoading ? (
+                    <div className="flex space-x-2">
+                      <Skeleton className="flex-1 h-10" />
+                      <Skeleton className="flex-1 h-10" />
+                      <Skeleton className="flex-1 h-10" />
+                    </div>
+                  ) : (
+                    <div className="flex space-x-2">
+                      <Button 
+                        variant="outline" 
+                        className={cn(
+                          "flex-1 flex items-center justify-center",
+                          liked ? "text-rose-500 border-rose-500" : ""
+                        )}
+                        onClick={handleLike}
+                        disabled={likePending}
+                      >
+                        <Heart className="h-4 w-4 mr-2" fill={liked ? "currentColor" : "none"} />
+                        {liked ? "Liked" : "Like"}
+                      </Button>
+                      
+                      <Button 
+                        variant="outline"
+                        className={cn(
+                          "flex-1 flex items-center justify-center",
+                          saved ? "text-dmv-blue border-dmv-blue" : ""
+                        )}
+                        onClick={handleSaveToggle}
+                        disabled={savePending}
+                      >
+                        <Bookmark className="h-4 w-4 mr-2" fill={saved ? "currentColor" : "none"} />
+                        {saved ? "Saved" : "Save"}
+                      </Button>
+                      
+                      <Button 
+                        variant="outline"
+                        className="flex-1 flex items-center justify-center"
+                        onClick={handleShare}
+                      >
+                        <Share2 className="h-4 w-4 mr-2" />
+                        Share
+                      </Button>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
