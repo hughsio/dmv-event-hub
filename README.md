@@ -4,14 +4,7 @@
 2. [Team Members]()
 3. [Features]()
 4. [Tech Stack]()
-
-- Languages: Python, JavaScript, HTML, CSS
-
-- Framework/Libraries: Flask, React, Pandas
-
-- Tools: Git, Docker, Postman
-
-5. [Installation]
+5. [Installation]()
 
 #Clone the repo
 
@@ -71,7 +64,7 @@ DC Life is a mobile application designed to help users discover and enjoy events
 * ✅ Feature 3 -Live Calendar 
 
 ## 🛠 Tech Stack
-* **Languages:** Python, JavaScript, SQL
+* **Languages:** Python, JavaScript, HTML, CSS
 * **Frameworks/Libraries:** Flask, React, Pandas
 * **Tools:** Git, Docker, Postman
 
