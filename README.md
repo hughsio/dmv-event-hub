@@ -2,29 +2,7 @@
 ## 📝 Table of Contents
 1. [Project Overview]()
 2. [Team Members]()
-
-Product Owner: Nicholas Kenner 
-
-Scrum Master: Gabriela Jimenez Martinez 
-
-Lead Designer: Vannesa Valentine 
-
-Lead Programmer: Javon Peterson 
-
-Tester: Luis Calderon 
-
-Tester: Biniam Lemma 
-
-Programmer: Heaven Frazier 
-
-Senior Programmer:  Dagmawi Mulualem   
-
-Designer: Asia Omary 
-
-Senior Programmer: Hugh Smith
-
 3. [Features]()
-
 4. [Tech Stack]
 
 - Languages: Python, JavaScript, HTML, CSS
