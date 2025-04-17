@@ -18,9 +18,7 @@ DC Life is a mobile application designed to help users discover and enjoy events
 ## 👥 Team Members
 | Name | Role | GitHub |
 |------|------|--------|
-| Hugh S. | Senior Programmer | [@hughsio](https://github.com/hughsio) |
-| Bob Smith | Backend Developer | [@bobsmith](https://github.com/bobsmith) |
-| Charlie Lee | Data Analyst | [@charlielee](https://github.com/charlielee) |
+| Hugh S. | Lead Programmer | [@hughsio](https://github.com/hughsio)|
 | Nicholas Kenner | Product Owner | [@Nicholas.K](https://github.com/TheCoyFIsh07) |
 
 ## ✨ Features
