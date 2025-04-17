@@ -6,43 +6,11 @@
 4. [Tech Stack]()
 5. [Installation]()
 
-#Clone the repo
-
-git clone https://github.com/your-org/project-name.git
-
-#Navigate into the directory
-
-cd project-Metro Buzz
-
-#Install dependencies (example for Python)
-
-pip install -r requirements.txt 
-
-6. [Usage]
+6. [Usage]()
 - NPM Start
 - Along with NPM Start it with open from the local host with a URL
-
-8. [Project Structure]
-
-```plaintext
-project-name/
-│
-├── data/               # Raw data files
-├── notebooks/          # Jupyter notebooks
-├── src/                # Source code
-├── tests/              # Unit tests
-├── README.md           # Project documentation
-└── requirements.txt    # Python dependencies 
-```
-
-9. [Contributing]
-
-Contribution guidelines
-
-Branch naming convention
-
-How to submit a pull request
-
+7. [Project Structure]()
+8. [Contributing]()
 9.  [Issues]()
 10. [License]()
 
@@ -80,8 +48,8 @@ cd project-name
 pip install -r requirements.txt 
 ```
 ## ▶️ Usage
-* How to run the app (e.g., `python app.py`, `npm start`)
-* Access instructions or URL (e.g., `http://localhost:3000`)
+* How to run the app?  - NPM Start
+* Access instructions or URL - `http://localhost:8080/`
 * Sample credentials if applicable
 
 ## 📁 Project Structure
