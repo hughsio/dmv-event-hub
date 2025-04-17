@@ -5,10 +5,7 @@
 3. [Features]()
 4. [Tech Stack]()
 5. [Installation]()
-
 6. [Usage]()
-- NPM Start
-- Along with NPM Start it with open from the local host with a URL
 7. [Project Structure]()
 8. [Contributing]()
 9.  [Issues]()
