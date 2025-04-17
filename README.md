@@ -23,11 +23,7 @@ Designer: Asia Omary
 
 Senior Programmer: Hugh Smith
 
-3. [Features]
-
--Exclusively for the DC community
-
--A plethera of features to filter through events age, event type, and times.
+3. [Features]()
 
 4. [Tech Stack]
 
@@ -76,15 +72,8 @@ Branch naming convention
 
 How to submit a pull request
 
-10. [Issues]
-
-Link to GitHub Issues tab
-
-How users can report bugs or request features
-
-11. [License]
-
-TBA
+9.  [Issues]()
+10. [License]()
 
 ---
 ## 📖 Project Overview
@@ -96,6 +85,7 @@ DC Life is a mobile application designed to help users discover and enjoy events
 | Hugh S. | Senior Programmer | [@hughsio](https://github.com/hughsio) |
 | Bob Smith | Backend Developer | [@bobsmith](https://github.com/bobsmith) |
 | Charlie Lee | Data Analyst | [@charlielee](https://github.com/charlielee) |
+| Nicholas Kenner | Product Owner | [@Nicholas.K](https://github.com/TheCoyFIsh07) |
 
 ## ✨ Features
 * ✅ Feature 1 -Exclusively for the DC community
