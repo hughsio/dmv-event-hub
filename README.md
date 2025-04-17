@@ -20,6 +20,14 @@ DC Life is a mobile application designed to help users discover and enjoy events
 |------|------|--------|
 | Hugh S. | Lead Programmer | [@hughsio](https://github.com/hughsio)|
 | Nicholas Kenner | Product Owner | [@Nicholas.K](https://github.com/TheCoyFIsh07) |
+| Javon Peterson | Programmer | [@bobsmith]() |
+| Vannesa Valentine | Lead Designer | [@Vannesa Valentine]() |
+| Gabriela Jimenez Martinez | Scrum Master | [@Gabriela Jimenez Martinez](https://github.com/Gabrielajm3) |
+| Luis Calderon | Tester | [@Luis Calderon]() |
+| Biniam Lemma | Tester | [@Biniam Lemma]() |
+| Heaven Frazier | Product Owner | [@Heaven Frazier]() |
+| Dagmawi Mulualem | Product Owner | [@Dagmawi Mulualem]() |
+| Asia Omary | Designer | [@Asia Omary]() |
 
 ## ✨ Features
 * ✅ Feature 1 -Exclusively for the DC community.
