@@ -1,4 +1,4 @@
-# 📘 Project Title
+# 📘 Metro Buzz App
 ## 📝 Table of Contents
 1. [Project Overview]()
 2. [Team Members]()
@@ -81,7 +81,7 @@ project-name/
 
 * Flask Documentation for guidance on backend development.
 
-* Our mentor, Jane Doe, for her invaluable advice on data pipelines.
+* Our professor, Li Chen, for his invaluable advice on data pipelines.
 
 
 
