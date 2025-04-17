@@ -51,7 +51,7 @@ pip install -r requirements.txt
 ## ▶️ Usage
 * How to run the app?  - NPM Start
 * Access instructions or URL - `http://localhost:8080/`
-* Sample credentials if applicable
+* Sample credentials - file accesses is the only sample credentials 
 
 ## 📁 Project Structure
 ```plaintext
@@ -73,11 +73,16 @@ project-name/
 * If you have issues check the issues page [Issues](https://github.com/hughsio/dmv-event-hub/issues)
 
 ## 📄 License
-* Name of license (MIT, Apache, etc.)
-* A short statement (e.g., "This project is licensed under the MIT License.")
+* MIT License.
+* This project is licensed under the MIT License."
 
 ## 🙏 Acknowledgments
-* Mentors, resources, or libraries that inspired the project
+* DC.gov Events API for providing event data.
+
+* Flask Documentation for guidance on backend development.
+
+* Our mentor, Jane Doe, for her invaluable advice on data pipelines.
+
 
 
 
