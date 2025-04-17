@@ -1,7 +1,7 @@
 # 📘 Project Title
 ## 📝 Table of Contents
-1. [Project Overview]
-2. [Team Members]
+1. [Project Overview]()
+2. [Team Members]()
 
 Product Owner: Nicholas Kenner 
 
@@ -98,9 +98,9 @@ DC Life is a mobile application designed to help users discover and enjoy events
 | Charlie Lee | Data Analyst | [@charlielee](https://github.com/charlielee) |
 
 ## ✨ Features
-* ✅ Feature 1 (e.g., User authentication)
-* ✅ Feature 2 (e.g., Data visualization dashboard)
-* ✅ Feature 3 (e.g., REST API endpoints)
+* ✅ Feature 1 -Exclusively for the DC community
+* ✅ Feature 2 -A plethera of features to filter through events age, event type, and times.
+* ✅ Feature 3 -Live Calendar 
 
 ## 🛠 Tech Stack
 * **Languages:** Python, JavaScript, SQL
