@@ -66,8 +66,7 @@ project-name/
 * How to submit a pull request
 
 ## 🐞 Issues
-* Link to GitHub Issues tab
-* How users can report bugs or request features
+* If you have issues check the issues page [Issues](https://github.com/hughsio/dmv-event-hub/issues)
 
 ## 📄 License
 * Name of license (MIT, Apache, etc.)
