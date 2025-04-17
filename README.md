@@ -24,9 +24,13 @@ DC Life is a mobile application designed to help users discover and enjoy events
 | Nicholas Kenner | Product Owner | [@Nicholas.K](https://github.com/TheCoyFIsh07) |
 
 ## ✨ Features
-* ✅ Feature 1 -Exclusively for the DC community
+* ✅ Feature 1 -Exclusively for the DC community.
 * ✅ Feature 2 -A plethera of features to filter through events age, event type, and times.
-* ✅ Feature 3 -Live Calendar 
+* ✅ Feature 3 -Live Calendar.
+* ✅ Feature 4 -User authentication: Secure login and personalized event recommendations.
+* ✅ Feature 5 -Save favorite events: Bookmark events and set reminders.
+* ✅ Feature 6 -Interactive maps: Locate event venues with ease.
+
 
 ## 🛠 Tech Stack
 * **Languages:** Python, JavaScript, HTML, CSS
