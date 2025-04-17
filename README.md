@@ -3,7 +3,7 @@
 1. [Project Overview]()
 2. [Team Members]()
 3. [Features]()
-4. [Tech Stack]
+4. [Tech Stack]()
 
 - Languages: Python, JavaScript, HTML, CSS
 
