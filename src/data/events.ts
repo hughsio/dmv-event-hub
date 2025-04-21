@@ -28,7 +28,8 @@ export const categories = [
   "Family",
   "Outdoors",
   "Charity",
-  "Education"
+  "Education",
+  "Just for Fun"
 ];
 
 export const events: Event[] = [
@@ -157,5 +158,19 @@ export const events: Event[] = [
     price: "Free",
     isFeatured: false,
     attendees: 189
+  },
+  {
+    id: uuidv4(),
+    title: "DC Bike Week",
+    description: "Join us for the annual DC Bike Week celebrating city and the all the bike trails DC has to offer.",
+    date: "2025-04-10",
+    time: "10:00 AM - 7:00 PM",
+    location: "Tidal Basin, Washington DC",
+    category: "Outdoors",
+    image: "https://images.unsplash.com/photo-1610651218119-cd161e98b319",
+    organizer: "DC Bike Club",
+    price: "Free",
+    isFeatured: true,
+    attendees: 275
   }
 ];
