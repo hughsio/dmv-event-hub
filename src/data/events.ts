@@ -172,7 +172,7 @@ export const events: Event[] = [
     time: "9:00 AM - 5:00 PM",
     location: "National Museum of History, Washington DC",
     category: "Museums",
-    image: "https://images.unsplash.com/photo-1563779154-9fa6f699f6ae",
+    image: "https://unsplash.com/photos/a-table-topped-with-lots-of-vases-and-rocks-Q8L3GuNW2MI",
     organizer: "National Museum of History",
     price: "$20",
     isFeatured: false,
