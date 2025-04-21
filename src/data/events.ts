@@ -25,17 +25,14 @@ export const categories = [
   "Family",
   "Food & Drink",
   "Just for Fun",
-  "Music",
+  "Resturants",
   "Museums",
-  "Networking",
-  "Nightlife",
-  "Outdoors",
-  "Restaurants",
   "Shopping",
-  "Sports",
-  "Tech",
+  "Nightlife",
   "Other"
 ];
+
+
 
 export const events: Event[] = [
   {
