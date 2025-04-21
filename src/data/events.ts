@@ -163,5 +163,19 @@ export const events: Event[] = [
     price: "Free",
     isFeatured: true,
     attendees: 275
-  }
+  },
+  {
+    id: uuidv4(),
+    title: "Ancient Artifacts Exhibit",
+    description: "Explore the fascinating world of ancient artifacts, showcasing relics from civilizations across the globe.",
+    date: "2025-05-15",
+    time: "9:00 AM - 5:00 PM",
+    location: "National Museum of History, Washington DC",
+    category: "Museums",
+    image: "https://images.unsplash.com/photo-1563779154-9fa6f699f6ae",
+    organizer: "National Museum of History",
+    price: "$20",
+    isFeatured: false,
+    attendees: 150
+  }  
 ];
