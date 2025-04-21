@@ -31,7 +31,7 @@ DC Life is a mobile application designed to help users discover and enjoy events
 | Gabriela Jimenez Martinez | Scrum Master | [@Gabriela Jimenez Martinez](https://github.com/Gabrielajm3) |
 | Luis Calderon | Tester | [@Luis Calderon]() |
 | Biniam Lemma | Tester | [@Biniam Lemma]() |
-| Heaven Frazier | Product Owner | [@Heaven Frazier]() |
+| Heaven Frazier | Programmer | [@Heaven Frazier]() |
 | Dagmawi Mulualem | Product Owner | [@Dagmawi Mulualem]() |
 | Asia Omary | Designer | [@Asia Omary]() |
 
