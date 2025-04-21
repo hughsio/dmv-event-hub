@@ -12,6 +12,9 @@ const Footer: React.FC = () => {
             <p className="text-sm text-gray-300">
               Your ultimate source for events in the DC, Maryland, and Virginia area.
             </p>
+            <p className="text-sm text-gray-300">
+              We are a team of event enthusiasts who are passionate about bringing the best events to the DMV area.
+            </p>
           </div>
           
           <div>
@@ -58,6 +61,16 @@ const Footer: React.FC = () => {
                   Sports
                 </Link>
               </li>
+              <li>
+                <Link to="/explore?category=Just%20for%20Fun" className="hover:text-dmv-pink transition-colors">
+                  Just for Fun
+                </Link>
+              </li>
+              <li>
+                <Link to="/explore?category=Outdoors" className="hover:text-dmv-pink transition-colors">
+                  Outdoors
+                </Link>
+              </li>
             </ul>
           </div>
           
@@ -73,10 +86,10 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-700 mt-8 pt-4 flex flex-col md:flex-row justify-between items-center text-sm text-gray-300">
           <p>&copy; {new Date().getFullYear()} DMV EventHub. All rights reserved.</p>
           <div className="flex space-x-4 mt-2 md:mt-0">
-            <a href="#" className="hover:text-white transition-colors">
+            <a href="/privacy-policy" className="hover:text-white transition-colors">
               Privacy Policy
             </a>
-            <a href="#" className="hover:text-white transition-colors">
+            <a href="/terms-of-service" className="hover:text-white transition-colors">
               Terms of Service
             </a>
           </div>
