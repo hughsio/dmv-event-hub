@@ -32,8 +32,6 @@ export const categories = [
   "Other"
 ];
 
-
-
 export const events: Event[] = [
   {
     id: uuidv4(),
