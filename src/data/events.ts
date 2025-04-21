@@ -25,10 +25,15 @@ export const categories = [
   "Family",
   "Food & Drink",
   "Just for Fun",
-  "Resturants",
+  "Music",
   "Museums",
-  "Shopping",
+  "Networking",
   "Nightlife",
+  "Outdoors",
+  "Restaurants",
+  "Shopping",
+  "Sports",
+  "Tech",
   "Other"
 ];
 
