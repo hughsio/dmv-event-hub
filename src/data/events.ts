@@ -29,7 +29,12 @@ export const categories = [
   "Outdoors",
   "Charity",
   "Education",
-  "Just for Fun"
+  "Just for Fun",
+  "Resturants",
+  "Museums",
+  "Shopping",
+  "Nightlife",
+  "Other"
 ];
 
 export const events: Event[] = [
