@@ -177,5 +177,33 @@ export const events: Event[] = [
     price: "$20",
     isFeatured: false,
     attendees: 150
-  }  
+  },
+  {
+    id: uuidv4(),
+    title: "Night at the Planetarium",
+    description: "An immersive stargazing experience with guided tours through the cosmos, perfect for all ages.",
+    date: "2025-06-08",
+    time: "7:00 PM - 10:00 PM",
+    location: "Smithsonian Air and Space Museum, Washington DC",
+    category: "Museums",
+    image: "https://images.unsplash.com/photo-1557472358-30dfd470c24b",
+    organizer: "Smithsonian Planetarium Team",
+    price: "Free",
+    isFeatured: true,
+    attendees: 320
+  },
+  {
+    id: uuidv4(),
+    title: "Interactive Science Lab Day",
+    description: "Hands-on exhibits and experiments that bring science to life for students and curious minds of all ages.",
+    date: "2025-07-12",
+    time: "11:00 AM - 4:00 PM",
+    location: "Children’s Science Museum, Washington DC",
+    category: "Museums",
+    image: "https://images.unsplash.com/photo-1717962690206-2d2f6ddac9db",
+    organizer: "DC Science Explorers",
+    price: "$10",
+    isFeatured: false,
+    attendees: 200
+  }      
 ];
