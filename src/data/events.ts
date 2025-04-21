@@ -19,23 +19,25 @@ export interface Event {
 }
 
 export const categories = [
-  "Music",
-  "Food & Drink",
   "Arts",
-  "Sports",
-  "Networking",
-  "Tech",
-  "Family",
-  "Outdoors",
   "Charity",
   "Education",
+  "Family",
+  "Food & Drink",
   "Just for Fun",
-  "Resturants",
   "Museums",
-  "Shopping",
+  "Music",
+  "Networking",
   "Nightlife",
-  "Other"
+  "Other",
+  "Outdoors",
+  "Resturants",
+  "Shopping",
+  "Sports",
+  "Tech"
 ];
+
+
 
 export const events: Event[] = [
   {
