@@ -45,21 +45,28 @@ DC Life is a mobile application designed to help users discover and enjoy events
 
 
 ## 🛠 Tech Stack
-* **Languages:** Python, JavaScript, HTML, CSS
-* **Frameworks/Libraries:** Flask, React, Pandas
-* **Tools:** Git, Docker, Postman
+* **Languages:** Typescript, TailwindsCSS
+* **Frameworks/Libraries:** React, Supabase, Clerk
+* **Tools:** GitHub
 
 ## ⚙️ Installation
 ```bash
 # Clone the repo
-git clone https://github.com/your-org/project-name.git
+git clone https://github.com/hughsio/dmv-event-hub.git
 
 # Navigate into the directory
-cd project-name
+cd dmv-event-hub
 
-# Install dependencies (example for Python)
-pip install -r requirements.txt 
+# Install dependencies
+npm i
+
+# Install Supabase
+npm install supabase
+
+# Run the server
+npm run dev
 ```
+
 ## ▶️ Usage
 * How to run the app?  - NPM Start
 * Access instructions or URL - `http://localhost:8080/`
@@ -92,12 +99,6 @@ Metro Buzz App/
 ├── tsconfig.node.json    # TypeScript config for Node
 └── bun.lockb             # Lockfile for Bun (
 ```
-## 🤝 Contributing
-If the community wishes to contribute to the project please follow the guidelines below 
-* Fork the repository
-* Make and test your changes thoroughly before saving them to the main repository.
-* Submit a pull request with a clear description of what you did.
-
 ## 🐞 Issues
 * If you have issues check the issues page [Issues](https://github.com/hughsio/dmv-event-hub/issues)
 
@@ -105,12 +106,7 @@ If the community wishes to contribute to the project please follow the guideline
 * MIT License.
 * This project is licensed under the MIT License."
 
-## 🙏 Acknowledgments
-* DC.gov Events API for providing event data.
 
-* Flask Documentation for guidance on backend development.
-
-* Our professor, Li Chen, for his invaluable advice on data pipelines.
 
 ---
 
