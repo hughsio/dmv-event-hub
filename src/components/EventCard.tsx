@@ -6,7 +6,8 @@ import { Heart, Bookmark, Share2, Calendar, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { Event } from '@/data/events';
-import { useUser, useAuth } from '@clerk/clerk-react';
+import { useUser as useClerkUser, useAuth } from '@clerk/clerk-react';
+import { useUser } from '@/context/UserContext';
 import { supabase } from '@/lib/supabase';
 
 interface EventCardProps {
@@ -30,8 +31,9 @@ const EventCard: React.FC<EventCardProps> = ({
   isEventSaved,
   isInitiallyRegistered
 }) => {
-  const { user, isSignedIn } = useUser();
+  const { user, isSignedIn } = useClerkUser();
   const { getToken } = useAuth();
+  const { addRegisteredEvent } = useUser();
   
   const [isRegistering, setIsRegistering] = useState(false);
   const [registrationError, setRegistrationError] = useState<string | null>(null);
@@ -80,27 +82,50 @@ const EventCard: React.FC<EventCardProps> = ({
         throw new Error("Authentication token not available.");
       }
 
-      const { data, error } = await supabase.functions.invoke('register-event', {
-        method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${token}`,
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ eventId: event.id })
-      });
+      console.log("[handleRegister] Event ID:", event.id);
+      const requestBody = JSON.stringify({ eventId: event.id });
+      console.log("[handleRegister] Stringified Body:", requestBody);
+      if (!event.id) {
+         console.error("[handleRegister] event.id is missing!");
+         throw new Error("Cannot register: event ID is missing.");
+      }
 
-      if (error) {
-        console.error("Function invocation error:", error);
-        throw new Error(error.message || "Failed to call registration function.");
+      // Use direct fetch instead of Supabase client
+      const response = await fetch(
+        'https://stnmwckuxkjjbawxbkkx.supabase.co/functions/v1/register-event',
+        {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json'
+          },
+          body: requestBody
+        }
+      );
+      
+      // Get response as text first
+      const responseText = await response.text();
+      console.log("[handleRegister] Raw response:", responseText);
+      
+      // Try to parse as JSON
+      let data;
+      try {
+        data = JSON.parse(responseText);
+      } catch (e) {
+        console.error("[handleRegister] Failed to parse response as JSON:", e);
+        throw new Error("Invalid response from server");
       }
       
-      if (data?.error) {
-        console.error("Registration function error:", data.error);
-        throw new Error(data.error);
+      if (!response.ok) {
+        console.error("[handleRegister] Server error:", data);
+        throw new Error(data.error || "Server returned an error");
       }
       
-      console.log('Function invocation successful:', data);
+      console.log('Registration successful:', data);
       setIsRegistered(true);
+      
+      // Update the global context
+      addRegisteredEvent(event.id);
 
     } catch (error: any) {
       console.error("Registration failed:", error);

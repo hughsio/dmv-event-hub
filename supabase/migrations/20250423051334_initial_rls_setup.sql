@@ -1,14 +1,14 @@
 -- supabase/migrations/20250423051334_initial_rls_setup.sql
 
 -- Ensure RLS is enabled and enforced on all relevant tables
-ALTER TABLE public.registrations ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.registrations FORCE ROW LEVEL SECURITY;
+ALTER TABLE IF EXISTS public.registrations ENABLE ROW LEVEL SECURITY;
+ALTER TABLE IF EXISTS public.registrations FORCE ROW LEVEL SECURITY;
 
-ALTER TABLE public.saved_events ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.saved_events FORCE ROW LEVEL SECURITY;
+ALTER TABLE IF EXISTS public.saved_events ENABLE ROW LEVEL SECURITY;
+ALTER TABLE IF EXISTS public.saved_events FORCE ROW LEVEL SECURITY;
 
-ALTER TABLE public.liked_events ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.liked_events FORCE ROW LEVEL SECURITY;
+ALTER TABLE IF EXISTS public.liked_events ENABLE ROW LEVEL SECURITY;
+ALTER TABLE IF EXISTS public.liked_events FORCE ROW LEVEL SECURITY;
 
 -- Drop any potential leftover policies from previous attempts (just in case)
 -- (Add specific old policy names here if you remember any, otherwise this section can be minimal)
@@ -28,6 +28,19 @@ FOR ALL -- Applies to SELECT, INSERT, UPDATE, DELETE
 USING (false)
 WITH CHECK (false);
 
+-- Allow authenticated users to SELECT only their own registrations
+CREATE POLICY "Allow authenticated users to read their registrations"
+  ON public.registrations
+  FOR SELECT
+  TO authenticated
+  USING (auth.uid() = user_id);
+
+-- Still block direct client writes (inserts/updates/deletes)
+CREATE POLICY "Block authenticated writes on registrations"
+  ON public.registrations
+  FOR INSERT, UPDATE, DELETE
+  TO authenticated
+  WITH CHECK (false);
 
 -- saved_events: Allow authenticated reads (INSECURE), block writes
 -- WARNING: The SELECT policy allows any logged-in user to see all saved events.
