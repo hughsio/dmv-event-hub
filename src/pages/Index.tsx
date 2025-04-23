@@ -6,8 +6,10 @@ import EventCard from '@/components/EventCard';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { events } from '@/data/events';
+import { useAuth } from '@clerk/clerk-react';
 
 const Index = () => {
+  const { isSignedIn } = useAuth();
   const featuredEvents = events.filter(event => event.isFeatured);
   const upcomingEvents = [...events].sort((a, b) => 
     new Date(a.date).getTime() - new Date(b.date).getTime()
@@ -34,11 +36,13 @@ const Index = () => {
                   Find Events
                 </Button>
               </Link>
-              <Link to="/profile">
-                <Button size="lg" variant="outline" className="border-white text-dmv-blue hover:bg-white/10">
-                  My Events
-                </Button>
-              </Link>
+              {isSignedIn && (
+                <Link to="/profile">
+                  <Button size="lg" variant="outline" className="border-white text-dmv-blue hover:bg-white/10">
+                    My Events
+                  </Button>
+                </Link>
+              )}
             </div>
           </div>
         </div>
@@ -115,9 +119,9 @@ const Index = () => {
           <p className="text-lg mb-8">
             Save your favorite events, get personalized recommendations, and share events with friends.
           </p>
-          <Link to="/profile">
+          <Link to={isSignedIn ? "/profile" : "/sign-up"}>
             <Button size="lg" className="bg-dmv-blue hover:bg-dmv-blue/90">
-              Create Your Event Profile
+              {isSignedIn ? "View Your Event Profile" : "Create Your Event Profile"}
             </Button>
           </Link>
         </div>

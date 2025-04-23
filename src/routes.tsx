@@ -1,5 +1,6 @@
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { SignedIn, SignedOut, RedirectToSignIn } from '@clerk/clerk-react';
+import { SignedIn, SignedOut, RedirectToSignIn, RedirectToSignUp } from '@clerk/clerk-react';
 import Index from './pages/Index';
 import ExploreEvents from './pages/ExploreEvents';
 import EventDetails from './pages/EventDetails';
@@ -34,10 +35,8 @@ const AppRoutes = () => {
               <Profile />
             </SignedIn>
             <SignedOut>
-              <RedirectToSignIn />
+              <RedirectToSignUp />
             </SignedOut>
-
-            
           </>
         }
       />
