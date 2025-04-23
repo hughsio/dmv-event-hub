@@ -1,6 +1,5 @@
-
 import { Routes, Route } from 'react-router-dom';
-import { SignedIn, SignedOut, RedirectToSignIn } from '@clerk/clerk-react';
+import { SignedIn, SignedOut, RedirectToSignIn, RedirectToSignUp } from '@clerk/clerk-react';
 import Index from './pages/Index';
 import ExploreEvents from './pages/ExploreEvents';
 import EventDetails from './pages/EventDetails';
@@ -10,6 +9,9 @@ import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
+import { Link } from 'react-router-dom';
+import MuseumEvents from './pages/MuseumEvents';
+
 import CalendarView from './pages/Calendar';
 
 const AppRoutes = () => {
@@ -24,6 +26,7 @@ const AppRoutes = () => {
       <Route path="/sign-up" element={<SignUp />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/terms-of-service" element={<TermsOfService />} />
+      <Route path="/museum-events" element={<MuseumEvents />} />
 
       {/* Protected routes */}
       <Route
@@ -34,7 +37,7 @@ const AppRoutes = () => {
               <Profile />
             </SignedIn>
             <SignedOut>
-              <RedirectToSignIn />
+              <RedirectToSignUp />
             </SignedOut>
           </>
         }
