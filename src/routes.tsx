@@ -1,3 +1,4 @@
+
 import { Routes, Route } from 'react-router-dom';
 import { SignedIn, SignedOut, RedirectToSignIn } from '@clerk/clerk-react';
 import Index from './pages/Index';
@@ -9,7 +10,7 @@ import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
-import { Link } from 'react-router-dom';
+import CalendarView from './pages/Calendar';
 
 const AppRoutes = () => {
   return (
@@ -17,6 +18,7 @@ const AppRoutes = () => {
       {/* Public routes */}
       <Route path="/" element={<Index />} />
       <Route path="/explore" element={<ExploreEvents />} />
+      <Route path="/calendar" element={<CalendarView />} />
       <Route path="/event/:eventId" element={<EventDetails />} />
       <Route path="/sign-in" element={<SignIn />} />
       <Route path="/sign-up" element={<SignUp />} />
@@ -44,4 +46,4 @@ const AppRoutes = () => {
   );
 };
 
-export default AppRoutes; 
+export default AppRoutes;
