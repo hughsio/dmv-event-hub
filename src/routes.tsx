@@ -10,6 +10,7 @@ import SignUp from './components/SignUp';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import { Link } from 'react-router-dom';
+import MuseumEvents from './pages/MuseumEvents';
 
 const AppRoutes = () => {
   return (
@@ -22,6 +23,7 @@ const AppRoutes = () => {
       <Route path="/sign-up" element={<SignUp />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/terms-of-service" element={<TermsOfService />} />
+      <Route path="/museum-events" element={<MuseumEvents />} />
 
       {/* Protected routes */}
       <Route
@@ -34,6 +36,8 @@ const AppRoutes = () => {
             <SignedOut>
               <RedirectToSignIn />
             </SignedOut>
+
+            
           </>
         }
       />
