@@ -1,7 +1,8 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Search } from 'lucide-react';
+import { Search, Calendar } from 'lucide-react';
 import { useAuth, UserButton } from '@clerk/clerk-react';
 
 const Navbar: React.FC = () => {
@@ -21,6 +22,9 @@ const Navbar: React.FC = () => {
           </Link>
           <Link to="/explore" className="text-dmv-dark hover:text-dmv-blue transition-colors">
             Explore
+          </Link>
+          <Link to="/calendar" className="text-dmv-dark hover:text-dmv-blue transition-colors">
+            Calendar
           </Link>
           {isSignedIn && (
             <Link to="/profile" className="text-dmv-dark hover:text-dmv-blue transition-colors">
