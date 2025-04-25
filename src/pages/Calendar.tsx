@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { format } from "date-fns";
 import { Calendar } from "@/components/ui/calendar";
@@ -60,14 +59,18 @@ const CalendarView = () => {
                     hasEvents: {
                       fontWeight: 'bold',
                       backgroundColor: 'rgb(var(--dmv-blue))',
-                      color: 'white',
+                      color: 'rgb(var(--dmv-blue))',
+                    },
+                    today: {
+                      border: '4px solid rgb(var(--dmv-blue))',
+                      fontWeight: 'bold',
                     }
                   }}
                 />
                 
                 <div className="mt-4 flex items-center gap-4">
-                  <div className="flex items-center gap-2">
-                    <div className="w-4 h-4 rounded-full bg-dmv-blue"></div>
+                  <div className="flex items-center gap-1">
+                    <div className="w-4 h-5 rounded-full bg-dmv-blue"></div>
                     <span className="text-sm">Has Events</span>
                   </div>
                   <Button 
