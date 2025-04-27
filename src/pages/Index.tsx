@@ -6,8 +6,10 @@ import EventCard from '@/components/EventCard';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { events } from '@/data/events';
+import { useAuth } from '@clerk/clerk-react';
 
 const Index = () => {
+  const { isSignedIn } = useAuth();
   const featuredEvents = events.filter(event => event.isFeatured);
   const upcomingEvents = [...events].sort((a, b) => 
     new Date(a.date).getTime() - new Date(b.date).getTime()
@@ -34,11 +36,13 @@ const Index = () => {
                   Find Events
                 </Button>
               </Link>
-              <Link to="/profile">
-                <Button size="lg" variant="outline" className="border-white text-dmv-blue hover:bg-white/10">
-                  My Events
-                </Button>
-              </Link>
+              {isSignedIn && (
+                <Link to="/profile">
+                  <Button size="lg" variant="outline" className="border-white text-dmv-blue hover:bg-white/10">
+                    My Events
+                  </Button>
+                </Link>
+              )}
             </div>
           </div>
         </div>
@@ -58,6 +62,34 @@ const Index = () => {
             {featuredEvents.slice(0, 3).map(event => (
               <EventCard key={event.id} event={event} featured />
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Museum Events */}
+      <section className="py-16 px-4 bg-dmv-gray">
+        <div className="container mx-auto">
+          <div className="flex justify-between items-center mb-10">
+            <h2 className="text-3xl font-bold text-dmv-blue">Museum Events</h2>
+            <Link to="/museum-events" className="text-dmv-blue hover:text-dmv-blue/80 font-medium flex items-center">
+              See all <ArrowRight className="ml-1 h-4 w-4" />
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {events
+              .filter(event => event.category === 'Museums')
+              .slice(0, 4)
+              .map(event => (
+                <EventCard key={event.id} event={event} />
+              ))
+            }
+          </div>
+          <div className="text-center mt-8">
+            <Link to="/museum-events">
+              <Button size="lg" className="bg-dmv-blue hover:bg-dmv-blue/90 text-white">
+                View All Museum Events
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -87,9 +119,9 @@ const Index = () => {
           <p className="text-lg mb-8">
             Save your favorite events, get personalized recommendations, and share events with friends.
           </p>
-          <Link to="/profile">
+          <Link to={isSignedIn ? "/profile" : "/sign-up"}>
             <Button size="lg" className="bg-dmv-blue hover:bg-dmv-blue/90">
-              Create Your Event Profile
+              {isSignedIn ? "View Your Event Profile" : "Create Your Event Profile"}
             </Button>
           </Link>
         </div>

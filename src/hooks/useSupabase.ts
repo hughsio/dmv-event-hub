@@ -6,6 +6,7 @@ export const useSupabase = () => {
   const { user, isLoaded } = useClerkUser();
   const [savedEvents, setSavedEvents] = useState<string[]>([]);
   const [likedEvents, setLikedEvents] = useState<string[]>([]);
+  const [registeredEvents, setRegisteredEvents] = useState<string[]>([]);
   const [isLoading, setIsLoading] = useState(isLoaded);
   const [error, setError] = useState<string | null>(null);
 
@@ -15,6 +16,7 @@ export const useSupabase = () => {
       if (isLoaded) {
         setSavedEvents([]);
         setLikedEvents([]);
+        setRegisteredEvents([]);
         setIsLoading(false);
         setError(null);
       }
@@ -46,12 +48,23 @@ export const useSupabase = () => {
           logSupabaseError('liked_events fetch', likedError);
         }
         
+        const { data: registrationsData, error: registrationsError } = await supabase
+          .from('registrations')
+          .select('event_id')
+          .eq('user_id', user.id);
+        
+        if (registrationsError) {
+          logSupabaseError('registrations fetch', registrationsError);
+        }
+        
         console.log("[useSupabase] Fetched saved events data:", savedData);
         console.log("[useSupabase] Fetched liked events data:", likedData);
+        console.log("[useSupabase] Fetched registrations data:", registrationsData);
         setSavedEvents(savedData ? savedData.map(item => item.event_id) : []);
         setLikedEvents(likedData ? likedData.map(item => item.event_id) : []);
+        setRegisteredEvents(registrationsData ? registrationsData.map(item => item.event_id) : []);
         
-        if (savedError && likedError) {
+        if (savedError && likedError && registrationsError) {
           setError('Failed to fetch your saved events');
         }
       } catch (err) {
@@ -179,15 +192,22 @@ export const useSupabase = () => {
     return likedEvents.includes(eventId);
   };
 
+  const addRegisteredEvent = (eventId: string) => {
+    if (registeredEvents.includes(eventId)) return;
+    setRegisteredEvents(prev => [...prev, eventId]);
+  };
+
   return {
     savedEvents,
     likedEvents,
+    registeredEvents,
     saveEvent,
     removeSavedEvent,
     toggleLikeEvent,
     isEventSaved,
     isEventLiked,
     isLoading: !isLoaded || isLoading,
-    error
+    error,
+    addRegisteredEvent,
   };
 }; 
