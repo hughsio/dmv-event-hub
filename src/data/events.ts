@@ -205,5 +205,47 @@ export const events: Event[] = [
     price: "$10",
     isFeatured: false,
     attendees: 200
-  }      
+  },      
+  {
+    id: uuidv4(),
+    title: "Gordon Ramsay Hell's Kitchen - Washington D.C. Experience",
+    description: "Eat some of the best food in D.C at Gordon Ramsay’s award-winning restaurant and drink the best of local wines.",
+    date: "2025-08-15",
+    time: "5:00 PM - 11:00 PM",
+    location: "Gordon Ramsay Hell's Kitchen, Washington D.C.",
+    category: "Restaurant",
+    image: "https://images.unsplash.com/photo-1599655345131-6eb73b81d8d6",
+    organizer: "DC Foodies",
+    price: "$150",
+    isFeatured: false,
+    attendees: 40
+  },      
+  {
+    id: uuidv4(),
+    title: "Burger Fest 2025",
+    description: "Have burgers from all over D.C via food trucks that’ll dazzle your tastebuds.",
+    date: "2025-10-1",
+    time: "9:00 AM - 4:00 PM",
+    location: "Anacostia Park, Washington D.C.",
+    category: "Restaurant",
+    image: "https://images.unsplash.com/photo-1508736793122-f516e3ba5569?q",
+    organizer: "DC Foodies",
+    price: "$5",
+    isFeatured: false,
+    attendees: 40
+  }, 
+  {
+    id: uuidv4(),
+    title: "Whiskey Charlie Rooftop Bar",
+    description: "Taste and relax in the good life while having a lovely sight of DC life below.",
+    date: "2025-5-26",
+    time: "2:00 PM - 12:00 PM",
+    location: "Conaopy By Hilton, Washington D.C.",
+    category: "Restaurant",
+    image: "https://images.unsplash.com/photo-1599066634419-0e3572eeb169",
+    organizer: "DC Foodies",
+    price: "$30",
+    isFeatured: false,
+    attendees: 30
+  },       
 ];
