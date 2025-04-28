@@ -1,0 +1,9 @@
+{
+  "imports": {
+    "@supabase/supabase-js": "npm:@supabase/supabase-js@^2.30",
+    "@clerk/backend": "npm:@clerk/backend@^0.35",
+    "cors": "https://deno.land/x/cors@v1.2.2/mod.ts",
+    "node:crypto": "npm:node:crypto",
+    "node:process": "npm:node:process"
+  }
+} 

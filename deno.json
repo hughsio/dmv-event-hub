@@ -1,0 +1,17 @@
+{
+  "tasks": {
+    "start": "deno run --allow-net --allow-read --allow-env supabase/functions/register-event/index.ts"
+  },
+  "importMap": "./supabase/functions/import_map.json",
+  "compilerOptions": {
+    "lib": [
+      "deno.window",
+      "deno.unstable"
+    ]
+  },
+  "imports": {
+    "@supabase/supabase-js": "npm:@supabase/supabase-js@^2.30",
+    "@clerk/clerk-sdk-node": "npm:@clerk/clerk-sdk-node@^4"
+  },
+  "nodeModulesDir": true
+} 
