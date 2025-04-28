@@ -63,7 +63,7 @@ npm i
 # Install Supabase
 npm install supabase
 
-# Run the server
+# Start the server
 npm run dev
 ```
 
