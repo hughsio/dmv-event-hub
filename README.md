@@ -97,7 +97,7 @@ Metro Buzz App/
 ├── tsconfig.json         # TypeScript base config
 ├── tsconfig.app.json     # TypeScript config for app build
 ├── tsconfig.node.json    # TypeScript config for Node
-└── bun.lockb             # Lockfile for Bun (
+└── bun.lockb             # Lockfile for Bun
 ```
 ## 🐞 Issues
 * If you have issues check the issues page [Issues](https://github.com/hughsio/dmv-event-hub/issues)
