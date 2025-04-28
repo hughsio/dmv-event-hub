@@ -8,7 +8,7 @@ export interface Event {
   time: string;
   location: string;
   category: string;
-  images: string[];
+  image: string;
   organizer: string;
   price: string;
   isFeatured: boolean;
@@ -45,10 +45,7 @@ export const events: Event[] = [
     time: "10:00 AM - 7:00 PM",
     location: "Tidal Basin, Washington DC",
     category: "Outdoors",
-    images: ["https://images.unsplash.com/photo-1522383225653-ed111181a951",
-              "https://images.unsplash.com/photo-1540575467063-178a50c2df87",
-              "https://images.unsplash.com/photo-1540575467063-178a50c2df87",
-    ],
+    image: "https://images.unsplash.com/photo-1522383225653-ed111181a951",
     organizer: "National Park Service",
     price: "Free",
     isFeatured: true,
@@ -62,10 +59,7 @@ export const events: Event[] = [
     time: "6:00 PM - 11:00 PM",
     location: "Wolf Trap, Vienna, VA",
     category: "Music",
-    images: ["https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae",
-              "https://images.unsplash.com/photo-1540575467063-178a50c2df87",
-              "https://images.unsplash.com/photo-1540575467063-178a50c2df87",
-    ],
+    image: "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae",
     organizer: "Capital Jazz Productions",
     price: "$75 - $150",
     isFeatured: true,
@@ -79,11 +73,7 @@ export const events: Event[] = [
     time: "11:00 AM - 4:00 PM",
     location: "Woodmont Triangle, Bethesda, MD",
     category: "Food & Drink",
-    images: [
-      "https://unsplash.com/photos/man-inside-food-stall-ye5T5R0G-GA",
-      "https://unsplash.com/photos/man-inside-food-stall-ye5T5R0G-GA",
-      "https://unsplash.com/photos/man-inside-food-stall-ye5T5R0G-GA",
-    ],
+    image: "https://unsplash.com/photos/man-inside-food-stall-ye5T5R0G-GA",
     organizer: "Bethesda Urban Partnership",
     price: "Free entry",
     isFeatured: false,
@@ -97,10 +87,7 @@ export const events: Event[] = [
     time: "10:00 AM - 6:00 PM",
     location: "King Street, Alexandria, VA",
     category: "Arts",
-    images: ["https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5",
-              "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5",
-              "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5",
-    ],
+    image: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5",
     organizer: "Alexandria Arts Society",
     price: "Free",
     isFeatured: true,
@@ -114,10 +101,7 @@ export const events: Event[] = [
     time: "6:30 PM - 9:00 PM",
     location: "Capital One Arena, Washington DC",
     category: "Tech",
-    images: ["https://images.unsplash.com/photo-1540575467063-178a50c2df87",
-              "https://images.unsplash.com/photo-1540575467063-178a50c2df87",
-              "https://images.unsplash.com/photo-1540575467063-178a50c2df87",
-    ],
+    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87",
     organizer: "DC Tech",
     price: "$10",
     isFeatured: false,
@@ -131,10 +115,9 @@ export const events: Event[] = [
     time: "7:05 PM",
     location: "Nationals Park, Washington DC",
     category: "Sports",
-    images: ["https://images.unsplash.com/photo-1562077772-3bd90403f7f0",
-             "https://images.unsplash.com/photo-1540575467063-178a50c2df87",
-              "https://images.unsplash.com/photo-1540575467063-178a50c2df87",
-    ],
+    images: "https://images.unsplash.com/photo-1562077772-3bd90403f7f0",
+             
+    
     organizer: "Washington Nationals",
     price: "$25 - $300",
     isFeatured: false,
@@ -148,10 +131,9 @@ export const events: Event[] = [
     time: "12:00 PM - 6:00 PM",
     location: "Carroll County Farm Museum, Westminster, MD",
     category: "Food & Drink",
-    images: ["https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb",
-              "https://images.unsplash.com/photo-1540575467063-178a50c2df87",
-              "https://images.unsplash.com/photo-1540575467063-178a50c2df87",
-    ],
+    images: "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb",
+             
+    
     organizer: "Maryland Wineries Association",
     price: "$35 in advance, $40 at the door",
     isFeatured: true,
@@ -165,10 +147,9 @@ export const events: Event[] = [
     time: "11:00 AM - 9:00 PM",
     location: "National Mall, Washington DC",
     category: "Arts",
-    images: ["https://images.unsplash.com/photo-1562164038-91cfe1d7cbce",
-              "https://images.unsplash.com/photo-1540575467063-178a50c2df87",
-              "https://images.unsplash.com/photo-1540575467063-178a50c2df87",
-    ],
+    images: "https://images.unsplash.com/photo-1562164038-91cfe1d7cbce",
+              
+    
     organizer: "Smithsonian Institution",
     price: "Free",
     isFeatured: false,
@@ -182,10 +163,9 @@ export const events: Event[] = [
     time: "10:00 AM - 7:00 PM",
     location: "Tidal Basin, Washington DC",
     category: "Outdoors",
-    images: ["https://images.unsplash.com/photo-1610651218119-cd161e98b319",
-              "https://images.unsplash.com/photo-1540575467063-178a50c2df87",
-              "https://images.unsplash.com/photo-1540575467063-178a50c2df87",
-    ],
+    images: "https://images.unsplash.com/photo-1610651218119-cd161e98b319",
+              
+    
     organizer: "DC Bike Club",
     price: "Free",
     isFeatured: true,
