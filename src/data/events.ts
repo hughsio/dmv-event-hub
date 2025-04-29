@@ -73,7 +73,7 @@ export const events: Event[] = [
     time: "11:00 AM - 4:00 PM",
     location: "Woodmont Triangle, Bethesda, MD",
     category: "Food & Drink",
-    image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1",
+    image: "https://unsplash.com/photos/man-inside-food-stall-ye5T5R0G-GA",
     organizer: "Bethesda Urban Partnership",
     price: "Free entry",
     isFeatured: false,
@@ -116,6 +116,8 @@ export const events: Event[] = [
     location: "Nationals Park, Washington DC",
     category: "Sports",
     image: "https://images.unsplash.com/photo-1562077772-3bd90403f7f0",
+             
+    
     organizer: "Washington Nationals",
     price: "$25 - $300",
     isFeatured: false,
@@ -130,6 +132,8 @@ export const events: Event[] = [
     location: "Carroll County Farm Museum, Westminster, MD",
     category: "Food & Drink",
     image: "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb",
+             
+    
     organizer: "Maryland Wineries Association",
     price: "$35 in advance, $40 at the door",
     isFeatured: true,
@@ -204,7 +208,106 @@ export const events: Event[] = [
     price: "$10",
     isFeatured: false,
     attendees: 200
-  },      
+  },
+  {
+    id: uuidv4(),
+    title: "Impressionist Masters Showcase",
+    description: "Experience iconic paintings from Monet, Renoir, and Degas, brought together for a limited-time exhibition.",
+    date: "2025-08-05",
+    time: "10:00 AM - 6:00 PM",
+    location: "National Art Gallery, Washington DC",
+    category: "Museums",
+    image: "https://images.unsplash.com/photo-1735605918310-73ad27a5dd6b",
+    organizer: "National Art Gallery",
+    price: "$15",
+    isFeatured: true,
+    attendees: 500
+  },
+  {
+    id: uuidv4(),
+    title: "Innovation Through the Ages",
+    description: "Discover how inventions from ancient times to the modern era have shaped the world we live in.",
+    date: "2025-09-14",
+    time: "9:30 AM - 5:30 PM",
+    location: "Smithsonian Museum of American History, Washington DC",
+    category: "Museums",
+    image: "https://images.unsplash.com/photo-1630756539201-f435ba29f1fe",
+    organizer: "Smithsonian Exhibitions",
+    price: "Free",
+    isFeatured: false,
+    attendees: 450
+  },
+  {
+    id: uuidv4(),
+    title: "Dinosaur Discovery Day",
+    description: "A full day of fossil digs, dinosaur exhibits, and educational workshops for families and kids.",
+    date: "2025-07-20",
+    time: "10:00 AM - 3:00 PM",
+    location: "National Museum of Natural History, Washington DC",
+    category: "Museums",
+    image: "https://images.unsplash.com/photo-1553338258-24fe91e8baf3",
+    organizer: "Natural History Education Team",
+    price: "$12",
+    isFeatured: false,
+    attendees: 275
+  },
+  {
+    id: uuidv4(),
+    title: "African American Heritage Celebration",
+    description: "An inspiring day of storytelling, exhibits, and performances honoring African American culture and history.",
+    date: "2025-10-02",
+    time: "11:00 AM - 6:00 PM",
+    location: "National Museum of African American History and Culture, Washington DC",
+    category: "Museums",
+    image: "https://images.unsplash.com/photo-1738235465258-8a69981f353d",
+    organizer: "Heritage and Culture Initiative",
+    price: "Free",
+    isFeatured: true,
+    attendees: 600
+  },
+  {
+    id: uuidv4(),
+    title: "STEAM Adventure Day",
+    description: "Interactive exhibits combining Science, Technology, Engineering, Art, and Math for kids and families.",
+    date: "2025-11-09",
+    time: "10:00 AM - 2:00 PM",
+    location: "Children’s Science Museum, Washington DC",
+    category: "Museums",
+    image: "https://images.unsplash.com/photo-1569837921581-b4ab4ff69592",
+    organizer: "Children’s Science Museum",
+    price: "$8",
+    isFeatured: false,
+    attendees: 180
+  },
+  {
+    id: uuidv4(),
+    title: "Photography Through the Decades",
+    description: "Travel through time with iconic photographs from the early 1900s to today’s digital era.",
+    date: "2025-08-25",
+    time: "12:00 PM - 7:00 PM",
+    location: "Contemporary Arts Museum, Washington DC",
+    category: "Museums",
+    image: "https://images.unsplash.com/photo-1636957455275-453a1042afa6",
+    organizer: "Contemporary Arts Collective",
+    price: "$10",
+    isFeatured: false,
+    attendees: 220
+  },
+  {
+    id: uuidv4(),
+    title: "Robots and Beyond: The Future of Technology",
+    description: "An interactive tech exhibit showcasing robotics, AI advancements, and future innovations.",
+    date: "2025-12-01",
+    time: "10:00 AM - 5:00 PM",
+    location: "Museum of Science and Technology, Washington DC",
+    category: "Museums",
+    image: "https://images.unsplash.com/photo-1653570450203-a9ea9d8d0ddf",
+    organizer: "Museum of Science and Technology",
+    price: "$18",
+    isFeatured: true,
+    attendees: 350
+  },
+  
   {
     id: uuidv4(),
     title: "Gordon Ramsay Hell's Kitchen - Washington D.C. Experience",
@@ -246,5 +349,6 @@ export const events: Event[] = [
     price: "$30",
     isFeatured: false,
     attendees: 30
-  },       
+  }, 
+
 ];
