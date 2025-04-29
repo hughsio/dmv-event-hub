@@ -350,5 +350,47 @@ export const events: Event[] = [
     isFeatured: false,
     attendees: 30
   }, 
+  {
+    id: uuidv4(),
+    title: "Chinatown Dining",
+    description: "Have a fun time eating savory local chinese food.",
+    date: "2025-6-23",
+    time: "2:00 PM - 7:00 PM",
+    location: "Chinatown, Washington D.C.",
+    category: "Restaurant",
+    image: "https://images.unsplash.com/photo-1558306674-e6f520248f1d",
+    organizer: "Chinatown Community Cultural Center",
+    price: "$20",
+    isFeatured: false,
+    attendees: 30
+  }, 
+  {
+    id: uuidv4(),
+    title: "DC Chocolate, Wine & Whiskey Festival",
+    description: "Come to the National Union Building to have many sweet treats and drinks for refined tastes.",
+    date: "2025-3-11",
+    time: "12:00 AM - 7:00 PM",
+    location: "National Union Building, Washington D.C.",
+    category: "Restaurant",
+    image: "https://images.unsplash.com/photo-1627647227768-705244233b56",
+    organizer: " TasteUSA",
+    price: "$20",
+    isFeatured: false,
+    attendees: 30
+  }, 
+  {
+    id: uuidv4(),
+    title: "Founding Farmers DC",
+    description: "Taste some of the best food in DC, all of it having iconic american flare.",
+    date: "2025-5-10",
+    time: "7:00 AM - 10:00 PM",
+    location: "Founding Farmers DC, Washington D.C.",
+    category: "Restaurant",
+    image: "https://images.unsplash.com/photo-1562513872-634b8fae6dbe",
+    organizer: "Founding Farmers DC",
+    price: "$50",
+    isFeatured: false,
+    attendees: 30
+  }, 
 
 ];
