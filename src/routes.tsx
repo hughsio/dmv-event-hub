@@ -11,6 +11,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import { Link } from 'react-router-dom';
 import MuseumEvents from './pages/MuseumEvents';
+import RestaurantEvents from './pages/RestaurantEvents';
 
 import CalendarView from './pages/Calendar';
 
@@ -27,6 +28,7 @@ const AppRoutes = () => {
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/terms-of-service" element={<TermsOfService />} />
       <Route path="/museum-events" element={<MuseumEvents />} />
+      <Route path='/restaurant-events' element={<RestaurantEvents />} />
 
       {/* Protected routes */}
       <Route

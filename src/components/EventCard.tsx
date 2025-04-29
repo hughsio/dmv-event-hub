@@ -19,6 +19,10 @@ interface EventCardProps {
   isEventLiked?: (id: string) => boolean;
   isEventSaved?: (id: string) => boolean;
   isInitiallyRegistered?: boolean;
+  isEventShared?: (id: string) => boolean;
+  isEventRegistered?: (id: string) => boolean;
+  isRegistered?: boolean;
+  isLoading?: boolean;
 }
 
 const EventCard: React.FC<EventCardProps> = ({ 

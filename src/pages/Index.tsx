@@ -93,6 +93,35 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Restaurant Events */}
+      <section className="py-16 px-4 bg-dmv-gray">
+        <div className="container mx-auto">
+          <div className="flex justify-between items-center mb-10">
+            <h2 className="text-3xl font-bold text-dmv-blue">Restaurant Events</h2>
+            <Link to="/restaurant-events" className="text-dmv-blue hover:text-dmv-blue/80 font-medium flex items-center">
+              See all <ArrowRight className="ml-1 h-4 w-4" />
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {events
+              .filter(event => event.category === 'Restaurant')
+              .slice(0, 4)
+              .map(event => (
+                <EventCard key={event.id} event={event} />
+              ))
+            }
+          </div>
+          <div className="text-center mt-8">
+            <Link to="/restaurant-events"> 
+              <Button size="lg" className="bg-dmv-blue hover:bg-dmv-blue/90 text-white">
+                View All Restaurant Events
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
       
       {/* Upcoming Events */}
       <section className="py-16 px-4">
