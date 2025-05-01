@@ -116,11 +116,6 @@ export const events: Event[] = [
     location: "Nationals Park, Washington DC",
     category: "Sports",
     image: "https://images.unsplash.com/photo-1562077772-3bd90403f7f0",
-<<<<<<< Updated upstream
-             
-    
-=======
->>>>>>> Stashed changes
     organizer: "Washington Nationals",
     price: "$25 - $300",
     isFeatured: false,
@@ -134,13 +129,7 @@ export const events: Event[] = [
     time: "12:00 PM - 6:00 PM",
     location: "Carroll County Farm Museum, Westminster, MD",
     category: "Food & Drink",
-<<<<<<< Updated upstream
-    image: "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb",
-             
-    
-=======
     image: "https://th.bing.com/th/id/OIP.ZQTf-9tvdpmEKw5KEUl_XgAAAA?rs=1&pid=ImgDetMain",
->>>>>>> Stashed changes
     organizer: "Maryland Wineries Association",
     price: "$35 in advance, $40 at the door",
     isFeatured: true,
@@ -154,11 +143,7 @@ export const events: Event[] = [
     time: "11:00 AM - 9:00 PM",
     location: "National Mall, Washington DC",
     category: "Arts",
-<<<<<<< Updated upstream
-    image: "https://images.unsplash.com/photo-1562164038-91cfe1d7cbce",
-=======
     image: "https://folklife-media.si.edu/images/page_thumbs_large/CFP10999.jpg",
->>>>>>> Stashed changes
     organizer: "Smithsonian Institution",
     price: "Free",
     isFeatured: false,
@@ -172,11 +157,7 @@ export const events: Event[] = [
     time: "10:00 AM - 7:00 PM",
     location: "Tidal Basin, Washington DC",
     category: "Outdoors",
-<<<<<<< Updated upstream
-    image: "https://images.unsplash.com/photo-1610651218119-cd161e98b319",
-=======
     image: "https://washington-org.s3.amazonaws.com/s3fs-public/styles/article_hero_breakpoints_theme_washington_xs_1x/public/dc-bike-ride-start-line-shot_credit-dcbr.jpg?itok=kIvlmeB7&timestamp=1519668943",
->>>>>>> Stashed changes
     organizer: "DC Bike Club",
     price: "Free",
     isFeatured: true,
