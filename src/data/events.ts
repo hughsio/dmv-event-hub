@@ -45,7 +45,7 @@ export const events: Event[] = [
     time: "10:00 AM - 7:00 PM",
     location: "Tidal Basin, Washington DC",
     category: "Outdoors",
-    image: "https://images.unsplash.com/photo-1522383225653-ed111181a951",
+    image: "https://novayorkevoce.com/wp-content/uploads/2014/04/capa2.jpg",
     organizer: "National Park Service",
     price: "Free",
     isFeatured: true,
@@ -59,7 +59,7 @@ export const events: Event[] = [
     time: "6:00 PM - 11:00 PM",
     location: "Wolf Trap, Vienna, VA",
     category: "Music",
-    image: "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae",
+    image: "https://www.capitaljazz.com/fest/2025/wp/wp-content/uploads/2024/06/CJF2024_0013_Jodeci.jpg",
     organizer: "Capital Jazz Productions",
     price: "$75 - $150",
     isFeatured: true,
@@ -73,7 +73,7 @@ export const events: Event[] = [
     time: "11:00 AM - 4:00 PM",
     location: "Woodmont Triangle, Bethesda, MD",
     category: "Food & Drink",
-    image: "https://unsplash.com/photos/man-inside-food-stall-ye5T5R0G-GA",
+    image: "https://i.pinimg.com/originals/aa/3b/2d/aa3b2dbd698d81e18141c87224fe99b9.jpg",
     organizer: "Bethesda Urban Partnership",
     price: "Free entry",
     isFeatured: false,
@@ -87,7 +87,7 @@ export const events: Event[] = [
     time: "10:00 AM - 6:00 PM",
     location: "King Street, Alexandria, VA",
     category: "Arts",
-    image: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5",
+    image: "https://www.alxnow.com/files/2022/05/Artist-Cat-Clausen-at-the-Alexandria-Old-Town-Springtime-Art-Festival-May-14-2022.-staff-photo-by-James-Cullum-1260x840.jpg",
     organizer: "Alexandria Arts Society",
     price: "Free",
     isFeatured: true,
@@ -101,7 +101,7 @@ export const events: Event[] = [
     time: "6:30 PM - 9:00 PM",
     location: "Capital One Arena, Washington DC",
     category: "Tech",
-    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87",
+    image: "https://media.licdn.com/dms/image/sync/D4E27AQHadTbKZzbttA/articleshare-shrink_800/0/1709735455208?e=2147483647&v=beta&t=SdMpFU5g0Y4dmx3UN_vozHRzvwyHhoEdaZ40vMWVl2M",
     organizer: "DC Tech",
     price: "$10",
     isFeatured: false,
@@ -116,8 +116,11 @@ export const events: Event[] = [
     location: "Nationals Park, Washington DC",
     category: "Sports",
     image: "https://images.unsplash.com/photo-1562077772-3bd90403f7f0",
+<<<<<<< Updated upstream
              
     
+=======
+>>>>>>> Stashed changes
     organizer: "Washington Nationals",
     price: "$25 - $300",
     isFeatured: false,
@@ -131,9 +134,13 @@ export const events: Event[] = [
     time: "12:00 PM - 6:00 PM",
     location: "Carroll County Farm Museum, Westminster, MD",
     category: "Food & Drink",
+<<<<<<< Updated upstream
     image: "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb",
              
     
+=======
+    image: "https://th.bing.com/th/id/OIP.ZQTf-9tvdpmEKw5KEUl_XgAAAA?rs=1&pid=ImgDetMain",
+>>>>>>> Stashed changes
     organizer: "Maryland Wineries Association",
     price: "$35 in advance, $40 at the door",
     isFeatured: true,
@@ -147,7 +154,11 @@ export const events: Event[] = [
     time: "11:00 AM - 9:00 PM",
     location: "National Mall, Washington DC",
     category: "Arts",
+<<<<<<< Updated upstream
     image: "https://images.unsplash.com/photo-1562164038-91cfe1d7cbce",
+=======
+    image: "https://folklife-media.si.edu/images/page_thumbs_large/CFP10999.jpg",
+>>>>>>> Stashed changes
     organizer: "Smithsonian Institution",
     price: "Free",
     isFeatured: false,
@@ -161,7 +172,11 @@ export const events: Event[] = [
     time: "10:00 AM - 7:00 PM",
     location: "Tidal Basin, Washington DC",
     category: "Outdoors",
+<<<<<<< Updated upstream
     image: "https://images.unsplash.com/photo-1610651218119-cd161e98b319",
+=======
+    image: "https://washington-org.s3.amazonaws.com/s3fs-public/styles/article_hero_breakpoints_theme_washington_xs_1x/public/dc-bike-ride-start-line-shot_credit-dcbr.jpg?itok=kIvlmeB7&timestamp=1519668943",
+>>>>>>> Stashed changes
     organizer: "DC Bike Club",
     price: "Free",
     isFeatured: true,
