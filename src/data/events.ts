@@ -116,7 +116,7 @@ export const events: Event[] = [
     location: "Nationals Park, Washington DC",
     category: "Sports",
     image: "https://images.unsplash.com/photo-1562077772-3bd90403f7f0",
-<<<<<<< HEAD
+     HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
              
@@ -126,7 +126,7 @@ export const events: Event[] = [
 =======
 >>>>>>> Stashed changes
 =======
->>>>>>> acb2838d99ae103202f2284c663137a2e70cdc91
+ acb2838d99ae103202f2284c663137a2e70cdc91
     organizer: "Washington Nationals",
     price: "$25 - $300",
     isFeatured: false,
@@ -180,7 +180,7 @@ export const events: Event[] = [
 >>>>>>> Stashed changes
 =======
     image: "https://folklife-media.si.edu/images/page_thumbs_large/CFP10999.jpg",
->>>>>>> acb2838d99ae103202f2284c663137a2e70cdc91
+acb2838d99ae103202f2284c663137a2e70cdc91
     organizer: "Smithsonian Institution",
     price: "Free",
     isFeatured: false,
