@@ -38,9 +38,9 @@ export const categories = [
 
 export const events: Event[] = [
   {
-    id: "9b1dc4a6-afb1-4ebb-9139-4832d346c5cf",
+    id: "cherry-blossom-festival",
     title: "Cherry Blossom Festival",
-    description: "Join us for the annual Cherry Blossom Festival celebrating the beautiful cherry trees and Japanese culture. Enjoy performances, food vendors, and activities for all ages.",
+    description: "Join us for the annual Cherry Blossom Festival celebrating the beautiful cherry trees and Japanese culture. Enjoy performances, food vendors, and activities for all ages. Don't miss the stunning cherry blossoms in full bloom!",
     date: "2025-04-10",
     time: "10:00 AM - 7:00 PM",
     location: "Tidal Basin, Washington DC",
@@ -52,9 +52,9 @@ export const events: Event[] = [
     attendees: 275
   },
   {
-    id: "8ca5fa01-9ae4-4fc9-aeb8-c07f03c8d00a",
+    id: "capital-jazz-festival",
     title: "Capital Jazz Festival",
-    description: "Experience the best in smooth jazz with top artists performing live under the stars. Food, drinks, and good vibes included.",
+    description: "Experience the best in smooth jazz with top artists performing live under the stars. Food, drinks, and good vibes included. Join us for a night of unforgettable music and fun!",
     date: "2025-06-12",
     time: "6:00 PM - 11:00 PM",
     location: "Wolf Trap, Vienna, VA",
@@ -66,9 +66,9 @@ export const events: Event[] = [
     attendees: 180
   },
   {
-    id: "3c2c0fa6-2a14-41ac-ab3f-5e1534f82495",
+    id: "taste-of-bethesda",
     title: "Taste of Bethesda",
-    description: "Sample delicious foods from over 60 restaurants and enjoy live entertainment throughout the day.",
+    description: "Sample delicious foods from over 60 restaurants and enjoy live entertainment throughout the day. This event is perfect for food lovers and families looking for a fun day out.",
     date: "2025-05-04",
     time: "11:00 AM - 4:00 PM",
     location: "Woodmont Triangle, Bethesda, MD",
@@ -80,9 +80,9 @@ export const events: Event[] = [
     attendees: 132
   },
   {
-    id: "14af0dfc-0440-4ffc-be71-06c3cae498b6",
+    id: "alexandria-art-festival",
     title: "Alexandria Art Festival",
-    description: "Browse and shop artwork from over 150 artists, enjoy live music, and participate in interactive art demonstrations.",
+    description: "Browse and shop artwork from over 150 artists, enjoy live music, and participate in interactive art demonstrations. Don't miss the chance to meet the artists!",
     date: "2025-04-25",
     time: "10:00 AM - 6:00 PM",
     location: "King Street, Alexandria, VA",
@@ -94,9 +94,9 @@ export const events: Event[] = [
     attendees: 95
   },
   {
-    id: "5a9f3e7d-c8b2-4a0e-9b1d-8c6e4f5a2b3d",
+    id: "dc-tech-meetup",
     title: "DC Tech Meetup",
-    description: "Connect with fellow tech professionals, share ideas, and hear from industry experts about the latest trends in technology.",
+    description: "Connect with fellow tech professionals, share ideas, and hear from industry experts about the latest trends in technology. This is a great opportunity to network and learn from each other.",
     date: "2025-05-15",
     time: "6:30 PM - 9:00 PM",
     location: "Capital One Arena, Washington DC",
@@ -108,9 +108,9 @@ export const events: Event[] = [
     attendees: 63
   },
   {
-    id: "6212b297-2781-485b-973b-981d193c0e3d",
+    id: "nats-vs-phillies",
     title: "Nationals vs. Phillies",
-    description: "Cheer on the Washington Nationals as they take on the Philadelphia Phillies in this exciting divisional matchup.",
+    description: "Cheer on the Washington Nationals as they take on the Philadelphia Phillies in this exciting divisional matchup. Enjoy a night of baseball, food, and fun at Nationals Park.",
     date: "2025-05-20",
     time: "7:05 PM",
     location: "Nationals Park, Washington DC",
@@ -122,9 +122,9 @@ export const events: Event[] = [
     attendees: 218
   },
   {
-    id: "7d4e8f9a-1b2c-3d4e-5f6g-7h8i9j0k1l2m",
+    id: "maryland-wine-festival",
     title: "Maryland Wine Festival",
-    description: "Sample wines from Maryland's top wineries, enjoy live music, and indulge in gourmet food pairings.",
+    description: "Sample wines from Maryland's top wineries, enjoy live music, and indulge in gourmet food pairings. This festival is a must for wine lovers and foodies alike.",
     date: "2025-06-05",
     time: "12:00 PM - 6:00 PM",
     location: "Carroll County Farm Museum, Westminster, MD",
@@ -136,9 +136,9 @@ export const events: Event[] = [
     attendees: 157
   },
   {
-    id: "8a7b6c5d-4e3f-2g1h-0i9j-8k7l6m5n4o3p",
+    id: "smithsonian-folklife-festival",
     title: "Smithsonian Folklife Festival",
-    description: "Immerse yourself in diverse cultural traditions through performances, crafts, cooking demonstrations, and storytelling.",
+    description: "Immerse yourself in diverse cultural traditions through performances, crafts, cooking demonstrations, and storytelling. This year's theme focuses on the rich heritage of the American South.",
     date: "2025-06-26",
     time: "11:00 AM - 9:00 PM",
     location: "National Mall, Washington DC",
@@ -150,7 +150,7 @@ export const events: Event[] = [
     attendees: 189
   },
   {
-    id: "2907852b-0eed-4904-bdb8-d29ca49a0741",
+    id: "dc-bike-week",
     title: "DC Bike Week",
     description: "Join us for the annual DC Bike Week celebrating city and the all the bike trails DC has to offer.",
     date: "2025-04-10",
@@ -164,7 +164,7 @@ export const events: Event[] = [
     attendees: 275
   },
   {
-    id: "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6p",
+    id: "ancient-artifacts-exhibit",
     title: "Ancient Artifacts Exhibit",
     description: "Explore the fascinating world of ancient artifacts, showcasing relics from civilizations across the globe.",
     date: "2025-05-15",
@@ -178,7 +178,7 @@ export const events: Event[] = [
     attendees: 150
   },
   {
-    id: "9z8y7x6w-5v4u-3t2s-1r0q-9p8o7n6m5l4k",
+    id: "night-at-planetarium",
     title: "Night at the Planetarium",
     description: "An immersive stargazing experience with guided tours through the cosmos, perfect for all ages.",
     date: "2025-06-08",
@@ -192,7 +192,7 @@ export const events: Event[] = [
     attendees: 320
   },
   {
-    id: "3j4k5l6m-7n8o-9p0q-1r2s-3t4u5v6w7x8y",
+    id: "interactive-science-lab-day",
     title: "Interactive Science Lab Day",
     description: "Hands-on exhibits and experiments that bring science to life for students and curious minds of all ages.",
     date: "2025-07-12",
